@@ -387,6 +387,7 @@ dev tun
 proto $PROTOCOL
 sndbuf 0
 rcvbuf 0
+auth-user-pass
 setenv opt method GET
 remote portalrecarga.vivo.com.br/recarga $PORT
 http-proxy $IP 80
@@ -406,5 +407,5 @@ verb 3" > /etc/openvpn/client-common.txt
 	echo "Concluido!"
 	echo ""
 	echo "Seu arquivo está disponivel em" ~/"$CLIENT.ovpn"
-	echo "Para mais opções digite (./openbr.sh)!"
+	echo "Seja Feliz!"
 fi
